@@ -1,3 +1,9 @@
+macro_ctrl-f11: macro_ctrl-f11{
+compatible = "zmk,behavior-macro";
+label = "macro_ctrl-f11";
+#binding-cells = <0>;
+bindings = <&kt LCTRL>, <&kp F11>, <&kt LCTRL>;
+};
 macro_cut: macro_cut{
 compatible = "zmk,behavior-macro";
 label = "macro_cut";
