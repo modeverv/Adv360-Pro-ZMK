@@ -1,3 +1,9 @@
+macro_expose: macro_expose{
+compatible = "zmk,behavior-macro";
+label = "macro_expose";
+#binding-cells = <0>;
+bindings = <&kt LCTRL>, <&kp UP>, <&kt LCTRL>;
+};
 macro_ctrlf11: macro_ctrlf11{
 compatible = "zmk,behavior-macro";
 label = "macro_ctrlf11";
