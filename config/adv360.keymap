@@ -43,7 +43,7 @@
    &kp TAB        &kp Q          &kp W      &kp E             &kp R   &kp T                   &kp F12                                                                                     &kp C_PP   &kp Y     &kp U      &kp I     &kp O      &kp P   &kp LEFT_BRACKET
  &kp LCTRL        &kp A          &kp S      &kp D             &kp F   &kp G            &macro_ctrlf11  &kp LEFT_COMMAND      &kp LALT                  &kp RIGHT_ALT  &kp RIGHT_COMMAND    &kp ESC   &kp H     &kp J      &kp K     &kp L   &kp SEMI  &kp RIGHT_BRACKET
  &kp LSHFT        &kp Z          &kp X      &kp C             &kp V   &kp B                                              &macro_paste                      &kp PG_UP                                 &kp N     &kp M  &kp COMMA   &kp DOT   &kp FSLH          &kp RSHFT
-    &tog 2  &macro_undo  &kp BACKSLASH  &kp GRAVE  &kp SINGLE_QUOTE                         &kp SPACE     &kp BACKSPACE   &macro_copy                      &kp PG_DN          &kp ENTER  &kp SPACE          &kp LEFT     &kp UP  &kp DOWN  &kp RIGHT             &tog 2
+     &mo 2  &macro_undo  &kp BACKSLASH  &kp GRAVE  &kp SINGLE_QUOTE                         &kp SPACE     &kp BACKSPACE   &macro_copy                      &kp PG_DN          &kp ENTER  &kp SPACE          &kp LEFT     &kp UP  &kp DOWN  &kp RIGHT              &mo 2
             >;
         };
 
@@ -62,7 +62,7 @@
               &kp F1           &kp F2           &kp F3      &kp F4      &kp F5        &kp F6                    &kp F7                                                                                            &kp F8        &kp F9       &kp F10       &kp F11       &kp F12       &kp F13          &kp F14
  &kp C_VOICE_COMMAND         &kp C_PP       &kp C_PREV  &kp C_NEXT  &kp C_MUTE  &kp C_VOL_DN              &kp C_VOL_UP                                                                                             &none         &none        &trans        &trans        &trans        &trans           &trans
            &kp LCTRL           &kp F1           &kp F2      &kp F3      &kp F4        &kp F5                    &kp F6  &kp LEFT_COMMAND  &kp LEFT_ALT                  &kp RIGHT_ALT  &kp RIGHT_COMMAND          &kp F7        &kp F8        &kp F9       &kp F11       &kp F12       &kp F13          &kp F14
-      &kp LEFT_SHIFT  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &bl BL_TOG  &bl BL_DEC    &bl BL_INC                                                     &none                         &trans                                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp RIGHT_SHIFT
+      &kp LEFT_SHIFT  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &bl BL_TOG  &bl BL_DEC    &bl BL_INC                                                     &to 4                          &to 4                                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp RIGHT_SHIFT
               &trans          &kp ESC          &kp ESC     &kp ESC     &kp ESC                          &macro_ctrlf11           &kp F12       &kp ESC                        &kp ESC            &kp F12  &macro_ctrlf11                     &kp ESC       &kp ESC       &kp ESC       &kp ESC           &trans
             >;
         };
@@ -83,7 +83,7 @@
           &kp TAB           &kp Q          &kp W      &kp E             &kp R   &kp T                     &kp F12                                                                                 &kp C_PP   &kp Y     &kp U      &kp I       &kp O          &kp P   &kp LEFT_BRACKET
  &kp LEFT_CONTROL           &kp A          &kp S      &kp D             &kp F   &kp G            &macro_winexpose   &kp LEFT_ALT     &kp LEFT_WIN                   &kp LEFT_WIN  &kp RIGHT_ALT    &kp ESC   &kp H     &kp J      &kp K       &kp L  &kp SEMICOLON  &kp RIGHT_BRACKET
    &kp LEFT_SHIFT           &kp Z          &kp X      &kp C             &kp V   &kp B                                             &macro_winpaste                    &kp PAGE_UP                             &kp N     &kp M  &kp COMMA  &kp PERIOD      &kp SLASH    &kp RIGHT_SHIFT
-           &tog 2  &macro_winundo  &kp BACKSLASH  &kp GRAVE  &kp SINGLE_QUOTE                           &kp SPACE  &kp BACKSPACE     &macro_wincp                  &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp LEFT     &kp UP    &kp DOWN      &kp RIGHT             &tog 2
+            &to 2  &macro_winundo  &kp BACKSLASH  &kp GRAVE  &kp SINGLE_QUOTE                           &kp SPACE  &kp BACKSPACE     &macro_wincp                  &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp LEFT     &kp UP    &kp DOWN      &kp RIGHT              &to 2
             >;
         };
 
