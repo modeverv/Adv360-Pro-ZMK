@@ -83,7 +83,7 @@
           &kp TAB           &kp Q          &kp W      &kp E             &kp R   &kp T                     &kp F12                                                                                 &kp C_PP   &kp Y     &kp U      &kp I       &kp O          &kp P   &kp LEFT_BRACKET
  &kp LEFT_CONTROL           &kp A          &kp S      &kp D             &kp F   &kp G            &macro_winexpose   &kp LEFT_ALT     &kp LEFT_WIN                   &kp LEFT_WIN  &kp RIGHT_ALT    &kp ESC   &kp H     &kp J      &kp K       &kp L  &kp SEMICOLON  &kp RIGHT_BRACKET
    &kp LEFT_SHIFT           &kp Z          &kp X      &kp C             &kp V   &kp B                                             &macro_winpaste                    &kp PAGE_UP                             &kp N     &kp M  &kp COMMA  &kp PERIOD      &kp SLASH    &kp RIGHT_SHIFT
-            &mo 2  &macro_winundo  &kp BACKSLASH  &kp GRAVE  &kp SINGLE_QUOTE                           &kp SPACE  &kp BACKSPACE     &macro_wincp                  &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp LEFT     &kp UP    &kp DOWN      &kp RIGHT              &mo 2
+           &trans  &macro_winundo  &kp BACKSLASH  &kp GRAVE  &kp SINGLE_QUOTE                           &kp SPACE  &kp BACKSPACE     &macro_wincp                  &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp LEFT     &kp UP    &kp DOWN      &kp RIGHT             &trans
             >;
         };
 
