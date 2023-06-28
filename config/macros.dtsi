@@ -1,3 +1,33 @@
+macro_commandf2: macro_commandf2{
+compatible = "zmk,behavior-macro";
+label = "macro_commandf2";
+#binding-cells = <0>;
+bindings = <&kt LEFT_COMMAND>, <&kp F2>, <&kt LEFT_COMMAND>;
+};
+macro_ctrlf2: macro_ctrlf2{
+compatible = "zmk,behavior-macro";
+label = "macro_ctrlf2";
+#binding-cells = <0>;
+bindings = <&kt LCTRL>, <&kp F2>, <&kt LCTRL>;
+};
+macro_optionf1: macro_optionf1{
+compatible = "zmk,behavior-macro";
+label = "macro_optionf1";
+#binding-cells = <0>;
+bindings = <&kt LEFT_ALT>, <&kp F1>, <&kt LEFT_ALT>;
+};
+macro_commandf1: macro_commandf1{
+compatible = "zmk,behavior-macro";
+label = "macro_commandf1";
+#binding-cells = <0>;
+bindings = <&kt LEFT_COMMAND>, <&kp F1>, <&kt LEFT_COMMAND>;
+};
+macro_ctrlf1: macro_ctrlf1{
+compatible = "zmk,behavior-macro";
+label = "macro_ctrlf1";
+#binding-cells = <0>;
+bindings = <&kt LCTRL>, <&kp F1>, <&kt LCTRL>;
+};
 macro_winexpose: macro_winexpose{
 compatible = "zmk,behavior-macro";
 label = "macro_winexpose";
