@@ -1,3 +1,15 @@
+macro_win-reload: macro_win-reload{
+compatible = "zmk,behavior-macro";
+label = "macro_win-reload";
+#binding-cells = <0>;
+bindings = <&kt LCTRL>, <&kp R>, <&kt LCTRL>;
+};
+macro_mac-reload: macro_mac-reload{
+compatible = "zmk,behavior-macro";
+label = "macro_mac-reload";
+#binding-cells = <0>;
+bindings = <&kt LEFT_COMMAND>, <&kp R>, <&kt LEFT_COMMAND>;
+};
 macro_commandf2: macro_commandf2{
 compatible = "zmk,behavior-macro";
 label = "macro_commandf2";
