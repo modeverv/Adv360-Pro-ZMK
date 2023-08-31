@@ -1,12 +1,12 @@
-macro_win-reload: macro_win-reload{
+macro_winreload: macro_winreload{
 compatible = "zmk,behavior-macro";
-label = "macro_win-reload";
+label = "macro_winreload";
 #binding-cells = <0>;
 bindings = <&kt LCTRL>, <&kp R>, <&kt LCTRL>;
 };
-macro_mac-reload: macro_mac-reload{
+macro_macreload: macro_macreload{
 compatible = "zmk,behavior-macro";
-label = "macro_mac-reload";
+label = "macro_macreload";
 #binding-cells = <0>;
 bindings = <&kt LEFT_COMMAND>, <&kp R>, <&kt LEFT_COMMAND>;
 };
