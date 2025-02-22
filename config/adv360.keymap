@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -27,36 +28,50 @@
         macro_mac_cp: macro_mac_cp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kt LEFT_COMMAND &kp C &kt LEFT_COMMAND>;
             label = "MACRO_MAC_CP";
         };
 
         macro_mac_paste: macro_mac_paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kt LEFT_COMMAND &kp V &kt LEFT_COMMAND>;
             label = "MACRO_MAC_PASTE";
         };
 
         macro_mac_undo: macro_mac_undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kt LEFT_COMMAND &kp Z &kt LEFT_COMMAND>;
             label = "MACRO_MAC_UNDO";
         };
 
         macro_mac_cut: macro_mac_cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kt LEFT_COMMAND &kp X &kt LEFT_COMMAND>;
             label = "MACRO_MAC_CUT";
         };
 
         macro_ctrl_f11: macro_ctrl_f11 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kt LCTRL &kp F11 &kt LCTRL>;
             label = "MACRO_CTRL_F11";
+        };
+
+        macro_mac_ss: macro_mac_ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_COMMAND &kt LSHIFT &kp NUMBER_4 &kt LSHIFT &kt LEFT_COMMAND>;
+            label = "MACRO_MAC_SS";
+        };
+
+        macro_mac_record: macro_mac_record {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_COMMAND &kt LSHIFT &kp N5 &kt LSHIFT &kt LEFT_COMMAND>;
+            label = "MACRO_MAC_RECORD";
         };
     };
 
@@ -88,11 +103,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &kp F6  &tog 1                                                 &mo 3            &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&trans  &trans  &trans  &trans  &trans       &trans  &none                                                  &none            &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans       &trans  &none            &trans   &trans      &trans  &trans   &none            &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans       &trans                            &trans      &trans                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &trans  &trans  &trans  &bootloader          &macro_ctrl_f11  &kp F12  &trans      &trans  &kp F12  &macro_ctrl_f11                &bootloader   &trans        &out OUT_TOG  &bt BT_CLR    &trans
+&kp F1  &kp F2         &kp F3         &kp F4             &kp F5       &kp F6  &tog 1                                                 &mo 3            &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&trans  &trans         &trans         &trans             &trans       &trans  &none                                                  &none            &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans         &trans         &trans             &trans       &trans  &none            &trans   &trans      &trans  &trans   &none            &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans         &trans         &trans             &trans       &trans                            &trans      &trans                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &macro_mac_ss  &macro_mac_ss  &macro_mac_record  &bootloader          &macro_ctrl_f11  &kp F12  &trans      &trans  &kp F12  &macro_ctrl_f11                &bootloader   &trans        &out OUT_TOG  &bt BT_CLR    &trans
             >;
         };
 
